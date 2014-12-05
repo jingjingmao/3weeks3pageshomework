@@ -1,6 +1,8 @@
 @import "compass/reset";
 @import "compass/css3";
 
+@import "compass/utilities/general/clearfix";
+
 html {
   font-family: Helvetica,sans-serif;
   color: #333;
@@ -134,7 +136,7 @@ header{
 
   .white {
     background-color: #f4f3f1;
-    height: 1800px;
+    height: 1850px;
 
     .dataBox {
       background-color: #f4f3f1;
@@ -169,8 +171,8 @@ header{
     .how-it-works {
       text-align: center;
       overflow: hidden;
-      margin-bottom: 100px;
-      padding-bottom: 100px;
+      margin-bottom: 50px;
+//      padding-bottom: 50px;
       border-bottom: 1px solid #e3e3e2;
 
       h1 {
@@ -195,13 +197,30 @@ header{
           width: 33.3%;
           position: relative;
 
-          .data{
+          .data {
             margin: auto auto 50px auto;
             border: 1px solid #DEDFDF;
             width: 40px;
             height: 40px;
             line-height: 40px;
             border-radius: 40px;
+            box-sizing: border-box;
+            background-color: #f4f3f1;
+          }
+
+          .data::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 50%;
+            width: 100%;
+            height: 1px;
+            background-color: #DEDFDF;
+          }
+
+          .first::before {
+            display: none;
           }
 
           .icon-address-book{
@@ -230,7 +249,10 @@ header{
             color: #b4b6bd;
             margin-top: 15px;
           }
+
         }
+
+        @include clearfix;
       }
 
       .longLine{
@@ -238,6 +260,7 @@ header{
         width: 100%;
         color: #e2e3e2;
       }
+
     }
 
     .why-choose-us{
@@ -320,7 +343,6 @@ header{
     .userInfo{
       margin-top: 100px;
       text-align: center;
-
 
       .tabs{
         text-align: center;
