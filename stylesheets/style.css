@@ -295,6 +295,7 @@ body .right img {
 }
 /* line 247, ../sass/style.scss */
 body footer {
+  text-align: center;
   height: 50px;
   margin-top: 25px;
   background-size: cover;
