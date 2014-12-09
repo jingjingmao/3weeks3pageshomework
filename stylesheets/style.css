@@ -78,137 +78,154 @@ body .left img {
 }
 /* line 27, ../sass/style.scss */
 body header {
-  margin-left: 100px;
-  margin-right: 100px;
   overflow: hidden;
+  background-color: slategrey;
 }
-/* line 32, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 body header .top {
   overflow: hidden;
+  padding-top: 10px;
+  padding-left: 150px;
   height: 50px;
 }
-/* line 36, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 body header .top .top-left {
   float: left;
   font-size: 30px;
 }
-/* line 40, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 body header .top .top-left .clock {
   width: 150px;
   height: 50px;
 }
-/* line 46, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 body header .top .top-center {
   position: absolute;
-  margin-left: 150px;
-  margin-top: 12px;
-  border-radius: 15px;
+  margin-left: 170px;
+  margin-top: 9px;
 }
-/* line 52, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 body header .top .top-center .title {
   text-shadow: 2px 2px #ff0000;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   font-family: Helvetica,sans-serif;
 }
-/* line 60, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 body header .top .top-right {
   float: right;
+  padding-right: 150px;
 }
-/* line 63, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
+body header .top .top-right .icon-wechat {
+  color: greenyellow;
+}
+/* line 70, ../sass/style.scss */
+body header .top .top-right .icon-qq {
+  color: blue;
+}
+/* line 74, ../sass/style.scss */
 body header .top .top-right li {
   display: inline-block;
   font-size: 15px;
   padding-top: 32px;
   padding-left: 20px;
 }
-/* line 69, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 body header .top .top-right li a {
   text-decoration: none;
 }
-/* line 72, ../sass/style.scss */
+/* line 85, ../sass/style.scss */
 body header .top .top-right li a:hover {
   text-decoration: underline;
 }
-/* line 80, ../sass/style.scss */
-body header .pic-gif {
-  text-align: center;
-  margin-top: 5px;
-}
-/* line 86, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 body .video {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 40px;
   margin-left: 150px;
   margin-right: 150px;
 }
-/* line 92, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 body .video h1 {
   font-size: 30px;
+  color: #5D5D5D;
   font-weight: bold;
-  padding-bottom: 2px;
+  padding-bottom: 20px;
 }
-/* line 99, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 body .video .sub-video object {
   height: 500px;
   width: 100%;
 }
-/* line 106, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 body .tab {
   margin: 25px 150px;
 }
-/* line 109, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 body .tab #box {
   width: 100%;
   overflow: hidden;
 }
-/* line 113, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 body .tab #box #tab-nav {
-  line-height: 24px;
+  line-height: 30px;
 }
-/* line 116, ../sass/style.scss */
+/* line 131, ../sass/style.scss */
 body .tab #box #tab-nav li {
   float: left;
-  margin-right: 3px;
+  margin-right: 5px;
   list-style: none;
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  height: 24px;
-  width: 80px;
+  height: 30px;
+  width: 150px;
   text-align: center;
   background: #B0C732;
 }
-/* line 128, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 body .tab #box #tab-nav a {
-  color: #FFFFFF;
+  color: whitesmoke;
+  font-size: 20px;
   text-decoration: none;
 }
-/* line 132, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 body .tab #box #tab-nav a:hover {
   color: blue;
 }
-/* line 139, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 body .tab #tab-content {
+  padding-left: 20px;
+  padding-top: 10px;
   width: 100%;
-  height: 200px;
-  background-color: #B0C732;
+  height: 272px;
+  background-color: darkolivegreen;
   box-sizing: border-box;
   font: 16px;
-  line-height: 25px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  line-height: 30px;
+  overflow: hidden;
+  color: whitesmoke;
+}
+/* line 169, ../sass/style.scss */
+body .tab #tab-content .summary {
+  padding-top: 20px;
+}
+/* line 173, ../sass/style.scss */
+body .tab #tab-content #t1, body .tab #tab-content #t2, body .tab #tab-content #t3 {
+  padding-left: 20px;
+  padding-top: 10px;
+  width: 100%;
+  height: 272px;
+  background-color: darkolivegreen;
+  box-sizing: border-box;
+  font: 16px;
+  line-height: 30px;
   overflow: hidden;
 }
-/* line 155, ../sass/style.scss */
-body .tab #tab-content #t1, body .tab #tab-content #t2, body .tab #tab-content #t3 {
-  height: 272px;
-}
-/* line 160, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 body .tab #tab-content .links {
   padding-top: 25px;
 }
-/* line 163, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 body .tab #tab-content .links li {
   width: 33.3%;
   float: left;
@@ -218,88 +235,85 @@ body .tab #tab-content .links li {
   font-size: 30px;
   padding-bottom: 30px;
 }
-/* line 172, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 body .tab #tab-content .links li a {
   text-decoration: none;
-  color: black;
+  color: whitesmoke;
 }
-/* line 176, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 body .tab #tab-content .links li a:hover {
   color: #B0C732;
   font-weight: bold;
-  background-color: bisque;
-  border-radius: 10px;
 }
-/* line 188, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 body .picShow {
   overflow: hidden;
   text-align: center;
-  width: 930px;
-  margin: auto;
-  border-radius: 20px;
+  width: 960px;
+  margin: auto 150px;
 }
-/* line 195, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 body .picShow li {
   position: relative;
   float: left;
   display: block;
 }
-/* line 200, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 body .picShow li img {
-  border-radius: 20px;
   height: 200px;
-  width: 300px;
+  width: 230px;
   display: block;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 10px;
-  opacity: 1;
+  opacity: 0.7;
 }
-/* line 211, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 body .picShow li strong {
   display: none;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
 }
-/* line 217, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 body .picShow li:hover {
   background-color: #333;
-  border-radius: 20px;
   text-decoration: none;
-  opacity: 0.7;
+  opacity: 1;
 }
-/* line 223, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 body .picShow li:hover strong {
-  color: #FFF;
+  color: white;
   display: block;
   position: absolute;
-  width: 300px;
+  width: 250px;
   top: 50px;
+  line-height: 50px;
 }
-/* line 236, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 body .right {
+  padding-top: 300px;
   position: fixed;
   display: block;
   right: 10px;
   top: 50px;
 }
-/* line 242, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 body .right img {
   height: 130px;
   width: 130px;
 }
-/* line 248, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 body footer {
+  background-color: slategrey;
   text-align: center;
   height: 50px;
   margin-top: 25px;
-  background-size: cover;
 }
-/* line 254, ../sass/style.scss */
-body footer strong {
+/* line 276, ../sass/style.scss */
+body footer div {
+  padding-top: 17.5px;
+  color: whitesmoke;
   padding-bottom: 0;
-  font-size: 40px;
+  font-size: 15px;
   font-style: italic;
-  font-weight: bold;
-  text-shadow: 2px 2px #ff0000;
 }

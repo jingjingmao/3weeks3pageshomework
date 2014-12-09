@@ -25,12 +25,15 @@ body{
   }
 
   header {
-    margin-left: 100px;
-    margin-right: 100px;
+//    margin-left: 150px;
+//    margin-right: 150px;
     overflow: hidden;
+    background-color: slategrey;
 
     .top{
       overflow: hidden;
+      padding-top: 10px;
+      padding-left: 150px;
       height: 50px;
 
       .top-left {
@@ -45,13 +48,12 @@ body{
 
       .top-center{
         position: absolute;
-        margin-left: 150px;
-        margin-top: 12px;
-        border-radius: 15px;
+        margin-left: 170px;
+        margin-top: 9px;
 
         .title{
           text-shadow: 2px 2px #ff0000;
-          font-size: 30px;
+          font-size: 40px;
           font-weight: bold;
           font-family: Helvetica,sans-serif;
         }
@@ -59,12 +61,23 @@ body{
 
       .top-right{
         float: right;
+        padding-right: 150px;
+
+        .icon-wechat {
+          color: greenyellow;
+        }
+
+        .icon-qq{
+          color: blue;
+        }
 
         li{
           display: inline-block;
           font-size: 15px;
           padding-top: 32px;
           padding-left: 20px;
+
+
 
           a {
             text-decoration: none;
@@ -74,25 +87,27 @@ body{
             }
           }
         }
+
       }
     }
 
-    .pic-gif{
-      text-align: center;
-      margin-top: 5px;
-    }
+//    .pic-gif{
+//      text-align: center;
+//      margin-top: 10px;
+//    }
   }
 
   .video{
     text-align: center;
-    margin-top: 25px;
+    margin-top: 40px;
     margin-left: 150px;
     margin-right: 150px;
 
     h1{
       font-size: 30px;
+      color: #5D5D5D;
       font-weight: bold;
-      padding-bottom: 2px;
+      padding-bottom: 20px;
     }
 
     .sub-video{
@@ -111,22 +126,23 @@ body{
       overflow: hidden;
 
       #tab-nav {
-        line-height: 24px;
+        line-height: 30px;
 
         li {
           float: left;
-          margin-right: 3px;
+          margin-right: 5px;
           list-style: none;
           border-top-left-radius: 5px;
-          border-top-right-radius: 5px;
-          height: 24px;
-          width: 80px;
+//          border-top-right-radius: 5px;
+          height: 30px;
+          width: 150px;
           text-align: center;
           background: #B0C732;
         }
 
         a {
-          color: #FFFFFF;
+          color: whitesmoke;
+          font-size: 20px;
           text-decoration: none;
 
           &:hover {
@@ -137,24 +153,34 @@ body{
     }
 
     #tab-content {
+      padding-left: 20px;
+      padding-top: 10px;
       width: 100%;
-      height: 200px;
-      background-color: #B0C732;
+      height: 272px;
+      background-color: darkolivegreen;
       box-sizing: border-box;
       font: 16px;
-      line-height: 25px;
-//      background: url("../image/National Sport.jpg") no-repeat;
-//      background-size: cover;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
-      border-bottom-left-radius: 10px;
+      line-height: 30px;
       overflow: hidden;
+      color: whitesmoke;
 //      overflow-x: scroll;
 //      overflow-y: scroll;
 
+      .summary{
+        padding-top: 20px;
+      }
+
       #t1, #t2, #t3 {
 //        width: 100%;
+        padding-left: 20px;
+        padding-top: 10px;
+        width: 100%;
         height: 272px;
+        background-color: darkolivegreen;
+        box-sizing: border-box;
+        font: 16px;
+        line-height: 30px;
+        overflow: hidden;
       }
 
       .links{
@@ -171,13 +197,11 @@ body{
 
           a{
             text-decoration: none;
-            color: black;
+            color: whitesmoke;
 
             &:hover{
               color: #B0C732;
               font-weight: bold;
-              background-color: bisque;
-              border-radius: 10px;
             }
           }
         }
@@ -188,9 +212,8 @@ body{
   .picShow{
     overflow: hidden;
     text-align: center;
-    width: 930px;
-    margin: auto;
-    border-radius: 20px;
+    width: 960px;
+    margin: auto 150px;
 
     li{
       position: relative;
@@ -198,42 +221,41 @@ body{
       display: block;
 
       img {
-        border-radius: 20px;
         height: 200px;
-        width: 300px;
+        width: 230px;
         display: block;
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 10px;
-        opacity: 1;
+        opacity: 0.7;
       }
 
       strong {
         display: none;
         text-align: center;
-        font-size: 50px;
+        font-size: 30px;
       }
 
       &:hover{
         background-color: #333;
-        border-radius: 20px;
         text-decoration: none;
-        opacity: 0.7;
+        opacity: 1;
 
         strong{
-          color: #FFF;
+          color: white;
           display: block;
           position: absolute;
-          width:300px;
+          width:250px;
           top:50px;
 //          left:0px;
-//          line-height:20px;
+          line-height:50px;
         }
       }
     }
   }
 
   .right{
+      padding-top: 300px;
       position: fixed;
       display: block;
       right: 10px;
@@ -246,17 +268,17 @@ body{
   }
 
   footer{
+    background-color: slategrey;
     text-align: center;
     height: 50px;
     margin-top: 25px;
-    background-size: cover;
 
-    strong{
+    div{
+      padding-top: 17.5px;
+      color: whitesmoke;
       padding-bottom: 0;
-      font-size: 40px;
+      font-size: 15px;
       font-style: italic;
-      font-weight: bold;
-      text-shadow: 2px 2px #ff0000
     }
   }
 }
