@@ -4,8 +4,8 @@
 @import "compass/utilities/general/clearfix";
 
 html {
-  background: url("../image/1250117150975.jpg") no-repeat;
-  background-size: cover;
+//  background: url("../image/1250117150975.jpg") no-repeat;
+//  background-size: cover;
 }
 
 body{
@@ -79,6 +79,7 @@ body{
 
     .pic-gif{
       text-align: center;
+      margin-top: 5px;
     }
   }
 
