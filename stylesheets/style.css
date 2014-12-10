@@ -175,7 +175,6 @@ body .tab #box #tab-nav {
 body .tab #box #tab-nav li {
   float: left;
   margin-right: 5px;
-  list-style: none;
   border-top-left-radius: 5px;
   height: 30px;
   width: 150px;
@@ -194,7 +193,6 @@ body .tab #box #tab-nav a:hover {
 }
 /* line 155, ../sass/style.scss */
 body .tab #tab-content {
-  padding-left: 20px;
   padding-top: 10px;
   width: 100%;
   height: 272px;
@@ -205,11 +203,16 @@ body .tab #tab-content {
   overflow: hidden;
   color: whitesmoke;
 }
-/* line 169, ../sass/style.scss */
-body .tab #tab-content .summary {
+/* line 157, ../sass/style.scss */
+body .tab #tab-content ol {
+  list-style-type: decimal;
+  padding-left: 40px;
+}
+/* line 174, ../sass/style.scss */
+body .tab #tab-content p {
   padding-top: 20px;
 }
-/* line 173, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 body .tab #tab-content #t1, body .tab #tab-content #t2, body .tab #tab-content #t3 {
   padding-left: 20px;
   padding-top: 10px;
@@ -221,11 +224,11 @@ body .tab #tab-content #t1, body .tab #tab-content #t2, body .tab #tab-content #
   line-height: 30px;
   overflow: hidden;
 }
-/* line 186, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 body .tab #tab-content .links {
   padding-top: 25px;
 }
-/* line 189, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 body .tab #tab-content .links li {
   width: 33.3%;
   float: left;
@@ -235,30 +238,30 @@ body .tab #tab-content .links li {
   font-size: 30px;
   padding-bottom: 30px;
 }
-/* line 198, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 body .tab #tab-content .links li a {
   text-decoration: none;
   color: whitesmoke;
 }
-/* line 202, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 body .tab #tab-content .links li a:hover {
   color: #B0C732;
   font-weight: bold;
 }
-/* line 212, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 body .picShow {
   overflow: hidden;
   text-align: center;
   width: 960px;
   margin: auto 150px;
 }
-/* line 218, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 body .picShow li {
   position: relative;
   float: left;
   display: block;
 }
-/* line 223, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 body .picShow li img {
   height: 200px;
   width: 230px;
@@ -268,19 +271,19 @@ body .picShow li img {
   padding-bottom: 10px;
   opacity: 0.7;
 }
-/* line 233, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 body .picShow li strong {
   display: none;
   text-align: center;
   font-size: 30px;
 }
-/* line 239, ../sass/style.scss */
+/* line 244, ../sass/style.scss */
 body .picShow li:hover {
   background-color: #333;
   text-decoration: none;
   opacity: 1;
 }
-/* line 244, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 body .picShow li:hover strong {
   color: white;
   display: block;
@@ -289,7 +292,7 @@ body .picShow li:hover strong {
   top: 50px;
   line-height: 50px;
 }
-/* line 257, ../sass/style.scss */
+/* line 262, ../sass/style.scss */
 body .right {
   padding-top: 300px;
   position: fixed;
@@ -297,19 +300,19 @@ body .right {
   right: 10px;
   top: 50px;
 }
-/* line 264, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 body .right img {
   height: 130px;
   width: 130px;
 }
-/* line 270, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 body footer {
   background-color: slategrey;
   text-align: center;
   height: 50px;
   margin-top: 25px;
 }
-/* line 276, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 body footer div {
   padding-top: 17.5px;
   color: whitesmoke;
